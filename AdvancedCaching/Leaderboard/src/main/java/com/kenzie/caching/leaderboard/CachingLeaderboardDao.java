@@ -1,8 +1,11 @@
 package com.kenzie.caching.leaderboard;
 
+import com.kenzie.caching.leaderboard.resources.datasource.Entry;
 import com.kenzie.caching.leaderboard.resources.datasource.LeaderboardDao;
 
 import javax.inject.Inject;
+import java.util.Map;
+import java.util.Optional;
 
 public class CachingLeaderboardDao {
     private final LeaderboardDao dataSource;
@@ -30,6 +33,15 @@ public class CachingLeaderboardDao {
      * @return long representing score associated with username
      */
     public long getHighScore(String username) {
-        return 0;
+        if (username == null) {
+            throw new IllegalArgumentException("Key cannot be null");
+        }
+
+        long highScore = cache.getValue(username)
+                .map(Long::valueOf)
+                .orElseGet(() -> dataSource.getEntry(username).getScore());
+
+            cache.setValue(username, 300, String.valueOf(highScore));
+            return highScore;
     }
 }
