@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kenzie.caching.leaderboard.CachingLeaderboardDaoTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-11-23T05:29:50" hostname="MacBook-Pro-2.local" time="0.646">
+<testsuite name="com.kenzie.caching.leaderboard.CachingLeaderboardDaoTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-11-23T05:47:31" hostname="MacBook-Pro-2.local" time="0.69">
   <properties/>
-  <testcase name="getHighScore_cacheHit_returnsCachedData()" classname="com.kenzie.caching.leaderboard.CachingLeaderboardDaoTest" time="0.636"/>
+  <testcase name="getHighScore_cacheHit_returnsCachedData()" classname="com.kenzie.caching.leaderboard.CachingLeaderboardDaoTest" time="0.679"/>
   <testcase name="getHighScore_cacheMiss_returnsDataFrom()" classname="com.kenzie.caching.leaderboard.CachingLeaderboardDaoTest" time="0.009"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

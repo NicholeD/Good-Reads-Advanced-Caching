@@ -44,4 +44,8 @@ public class CachingLeaderboardDao {
             cache.setValue(username, 300, String.valueOf(highScore));
             return highScore;
     }
+
+    public boolean invalidate(String username) {
+        return cache.invalidate(username);
+    }
 }

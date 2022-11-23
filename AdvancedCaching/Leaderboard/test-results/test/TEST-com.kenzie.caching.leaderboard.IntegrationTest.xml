@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kenzie.caching.leaderboard.CachingLeaderboardFunctionalTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-23T05:47:32" hostname="MacBook-Pro-2.local" time="5.179">
+<testsuite name="com.kenzie.caching.leaderboard.IntegrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-23T05:47:47" hostname="MacBook-Pro-2.local" time="5.13">
   <properties/>
-  <testcase name="getScore_UsesCache()" classname="com.kenzie.caching.leaderboard.CachingLeaderboardFunctionalTest" time="5.179"/>
+  <testcase name="invalidate_whenKeyExists_deletesKey()" classname="com.kenzie.caching.leaderboard.IntegrationTest" time="5.13"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
