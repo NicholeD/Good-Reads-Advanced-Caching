@@ -4,6 +4,7 @@ package com.kenzie.caching.goodreads.dependency;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
 import com.kenzie.caching.goodreads.DynamoDbClientProvider;
+import com.kenzie.caching.goodreads.caching.CachingReadingLogDao;
 import com.kenzie.caching.goodreads.dao.NonCachingReadingLogDao;
 import com.kenzie.caching.goodreads.dao.ReadingLogDao;
 import dagger.Module;
@@ -34,7 +35,8 @@ public class DaoModule {
      */
     @Singleton
     @Provides
-    public ReadingLogDao provideReadingLogDao(NonCachingReadingLogDao readingLogDao) {
+    public ReadingLogDao provideReadingLogDao(CachingReadingLogDao readingLogDao) {
         return readingLogDao;
     }
+
 }

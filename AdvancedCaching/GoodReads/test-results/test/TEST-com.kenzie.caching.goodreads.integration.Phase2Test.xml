@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kenzie.caching.goodreads.integration.Phase2Test" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-11-23T22:56:57" hostname="MacBook-Pro-2.local" time="12.84">
+  <properties/>
+  <testcase name="getGoalProgress_cacheHit_quickAndEntryInCache()" classname="com.kenzie.caching.goodreads.integration.Phase2Test" time="7.424"/>
+  <testcase name="getGoalProgress_cacheMiss_takesAWhile()" classname="com.kenzie.caching.goodreads.integration.Phase2Test" time="5.416"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+</testsuite>
