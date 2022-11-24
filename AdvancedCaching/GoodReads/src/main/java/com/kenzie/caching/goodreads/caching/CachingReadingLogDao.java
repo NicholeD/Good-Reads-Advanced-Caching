@@ -1,8 +1,6 @@
 package com.kenzie.caching.goodreads.caching;
 
 
-import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
-import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
 import com.kenzie.caching.goodreads.dao.NonCachingReadingLogDao;
 import com.kenzie.caching.goodreads.dao.ReadingLogDao;
 import com.kenzie.caching.goodreads.dao.models.ReadingLog;
@@ -27,6 +25,10 @@ public class CachingReadingLogDao implements ReadingLogDao {
         if (userId == null) {
             throw new IllegalArgumentException("UserId cannot be null");
         }
+        if (isFinished) {
+            invalidate(userId);
+        }
+
         return readingLogDao.updateReadingProgress(userId, isbn, timestamp, pageNumber, isFinished);
     }
 
@@ -42,5 +44,13 @@ public class CachingReadingLogDao implements ReadingLogDao {
         cacheClient.setValue(userId, 3600, String.valueOf(booksRead));
 
         return booksRead;
+    }
+
+    public boolean invalidate(String key) {
+        if (key == null) {
+            throw new IllegalArgumentException("Key cannot be null");
+        }
+
+        return cacheClient.invalidate(key);
     }
 }

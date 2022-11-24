@@ -5,13 +5,13 @@ import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
 import javax.inject.Inject;
+import java.time.ZonedDateTime;
 import java.util.Optional;
 
 public class CacheClient {
-    private final JedisPool pool;
+    private final JedisPool pool = new CachingModule().provideJedisPool();
     @Inject
     public CacheClient(JedisPool jedisPool) {
-        this.pool = jedisPool;
     }
 
     public void setValue(String key, int seconds, String value) {

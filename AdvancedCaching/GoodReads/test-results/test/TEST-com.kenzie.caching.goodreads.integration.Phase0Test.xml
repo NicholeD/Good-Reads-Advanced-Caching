@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kenzie.caching.goodreads.integration.Phase0Test" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-11-23T20:38:41" hostname="MacBook-Pro-2.local" time="1.079">
+<testsuite name="com.kenzie.caching.goodreads.integration.Phase0Test" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-11-24T03:59:17" hostname="MacBook-Pro-2.local" time="1.312">
   <properties/>
-  <testcase name="[1] Caching-ReadingGoals" classname="com.kenzie.caching.goodreads.integration.Phase0Test" time="0.749"/>
-  <testcase name="[2] Caching-ReadingLogs" classname="com.kenzie.caching.goodreads.integration.Phase0Test" time="0.325"/>
+  <testcase name="[1] Caching-ReadingGoals" classname="com.kenzie.caching.goodreads.integration.Phase0Test" time="0.974"/>
+  <testcase name="[2] Caching-ReadingLogs" classname="com.kenzie.caching.goodreads.integration.Phase0Test" time="0.334"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

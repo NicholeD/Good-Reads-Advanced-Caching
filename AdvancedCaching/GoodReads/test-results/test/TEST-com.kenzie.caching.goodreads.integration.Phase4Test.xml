@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kenzie.caching.goodreads.integration.Phase4Test" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-11-24T03:57:41" hostname="MacBook-Pro-2.local" time="38.528">
+  <properties/>
+  <testcase name="doNotInvalidateCache_getGoalProgress_itemInCacheCache()" classname="com.kenzie.caching.goodreads.integration.Phase4Test" time="8.462"/>
+  <testcase name="invalidateCache_markBookAsRead_emptyCache()" classname="com.kenzie.caching.goodreads.integration.Phase4Test" time="5.97"/>
+  <testcase name="doNotInvalidateCache_setGoal_itemInCacheCache()" classname="com.kenzie.caching.goodreads.integration.Phase4Test" time="5.87"/>
+  <testcase name="doNotInvalidateCache_markBookAsCurrentlyReading_itemInCacheCache()" classname="com.kenzie.caching.goodreads.integration.Phase4Test" time="6.15"/>
+  <testcase name="doNotInvalidateCache_updateReadingNoFinished_itemInCacheCache()" classname="com.kenzie.caching.goodreads.integration.Phase4Test" time="6.131"/>
+  <testcase name="invalidateCache_updateReadingFinished_emptyCache()" classname="com.kenzie.caching.goodreads.integration.Phase4Test" time="5.941"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+</testsuite>
