@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kenzie.caching.leaderboard.CacheClientTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-11-23T05:47:37" hostname="MacBook-Pro-2.local" time="1.068">
+<testsuite name="com.kenzie.caching.leaderboard.CacheClientTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-11-28T22:55:40" hostname="Nicholes-MacBook-Pro.local" time="1.083">
   <properties/>
-  <testcase name="setValue_givenCacheEntry_storesInRedis()" classname="com.kenzie.caching.leaderboard.CacheClientTest" time="1.056"/>
-  <testcase name="getValue_cacheMiss_returnsEmptyOptional()" classname="com.kenzie.caching.leaderboard.CacheClientTest" time="0.002"/>
+  <testcase name="setValue_givenCacheEntry_storesInRedis()" classname="com.kenzie.caching.leaderboard.CacheClientTest" time="1.067"/>
+  <testcase name="getValue_cacheMiss_returnsEmptyOptional()" classname="com.kenzie.caching.leaderboard.CacheClientTest" time="0.003"/>
   <testcase name="getValue_nullKey_throwsIllegalArgumentException()" classname="com.kenzie.caching.leaderboard.CacheClientTest" time="0.003"/>
-  <testcase name="getValue_cacheHit_getsData()" classname="com.kenzie.caching.leaderboard.CacheClientTest" time="0.002"/>
-  <testcase name="setValue_nullKey_throwsIllegalArgumentException()" classname="com.kenzie.caching.leaderboard.CacheClientTest" time="0.001"/>
+  <testcase name="getValue_cacheHit_getsData()" classname="com.kenzie.caching.leaderboard.CacheClientTest" time="0.003"/>
+  <testcase name="setValue_nullKey_throwsIllegalArgumentException()" classname="com.kenzie.caching.leaderboard.CacheClientTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
